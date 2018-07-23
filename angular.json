@@ -23,6 +23,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/sass/styles.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -123,5 +125,10 @@
       }
     }
   },
-  "defaultProject": "angular-recipe-app"
+  "defaultProject": "angular-recipe-app",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
